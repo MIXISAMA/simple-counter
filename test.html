@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>统计</title>
+</head>
+
+<body>
+    <p id="count"></p>
+    <button type="button" onclick="req.open('GET', 'http:\/\/127.0.0.1:1234');req.send()"> +1 </button>
+</body>
+
+<script>
+    count = document.getElementById('count')
+    req = new XMLHttpRequest()
+    req.onload = () => {count.innerHTML = req.response}
+    req.open('GET', 'http:\/\/127.0.0.1:1234')
+    req.send()
+</script>
+
+</html>

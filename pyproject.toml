@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "simple-counter"
+version = "0.1.0"
+description = ""
+authors = ["张钧博 <810505685@qq.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.99.1"
+aiofiles = "^23.1.0"
+uvicorn = {extras = ["standard"], version = "^0.22.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
